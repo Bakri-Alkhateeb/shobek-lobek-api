@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const con = new Pool({
     user: `${process.env.DB_USER}`,
-    host: `${process.env.DB_HOST}`,
+    host: `${process.env.DATABASE_URL}`,
     database: `${process.env.DB_NAME}`,
     password: `${process.env.DB_PASS}`,
     port: `${process.env.DB_PORT}`,
