@@ -44,7 +44,7 @@ try {
                         mealsTimes.push(row.timeinmin);
                     });
 
-                    ress.json({
+                    res.json({
                         statusCode: 201,
                         count: rows['rows'].length,
                         mealsNames: meals,
